@@ -61,31 +61,11 @@
     </section>
     <section class="section about-us-section">
       <div class="container">
-        <ul class="about-us-icon-list">
-          <li class="about-us-icon-item">
-            <svg height="70" width="70" class="about-us-icon">
-              <use href="./images/symbol-defs.svg#icon-antenna"></use>
-            </svg>
-          </li>
-          <li class="about-us-icon-item">
-            <svg height="70" width="70" class="about-us-icon">
-              <use href="./images/symbol-defs.svg#icon-clock"></use>
-            </svg>
-          </li>
-          <li class="about-us-icon-item">
-            <svg height="70" width="70" class="about-us-icon">
-              <use href="./images/symbol-defs.svg#icon-diagram"></use>
-            </svg>
-          </li>
-          <li class="about-us-icon-item">
-            <svg height="70" width="70" class="about-us-icon">
-              <use href="./images/symbol-defs.svg#icon-astronaut"></use>
-            </svg>
-          </li>
-        </ul>
-
         <ul class="about-us-list">
           <li class="about-us-item">
+            <div class="about-us-icon-div"> <svg height="70" width="70" class="about-us-icon">
+              <use href="./images/symbol-defs.svg#icon-antenna"></use>
+            </svg></div>
             <h3 class="about-us-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
             <p class="about-us-text">
               Идейные соображения, а также начало повседневной работы по
@@ -93,20 +73,27 @@
             </p>
           </li>
           <li class="about-us-item">
-            <h3 class="about-us-title">ПУНКТУАЛЬНОСТЬ</h3>
+            <div class="about-us-icon-div"><svg height="70" width="70" class="about-us-icon">
+              <use href="./images/symbol-defs.svg#icon-clock"></use>
+            </svg></div><h3 class="about-us-title">ПУНКТУАЛЬНОСТЬ</h3>
             <p class="about-us-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li class="about-us-item">
-            <h3 class="about-us-title">ПЛАНИРОВАНИЕ</h3>
+            <div class="about-us-icon-div"><svg height="70" width="70" class="about-us-icon">
+              <use href="./images/symbol-defs.svg#icon-diagram"></use>
+            </svg></div><h3 class="about-us-title">ПЛАНИРОВАНИЕ</h3>
             <p class="about-us-text">
               Равным образом консультация с широким активом в значительной степени
               обуславливает.
             </p>
           </li>
           <li class="about-us-item">
+            <div class="about-us-icon-div"> <svg height="70" width="70" class="about-us-icon">
+              <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+            </svg></div>
             <h3 class="about-us-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
             <p class="about-us-text">
               Значимость этих проблем настолько очевидна, что реализация плановых
@@ -143,8 +130,6 @@
             <div class="our-team-item-div">
               <h3 class="our-team-name">Игорь Демьяненко</h3>
               <p class="our-team-job">Product Designer</p>
-            </div>
-            <div class="our-team-icon-div">
               <ul class="our-team-icon-list">
                 <li class="our-team-icon-item">
                   <a class="our-team-icon-link" href="#">
@@ -183,8 +168,6 @@
             <div class="our-team-item-div">
               <h3 class="our-team-name">Ольга Репина</h3>
               <p class="our-team-job">Frontend Developer</p>
-            </div>
-            <div class="our-team-icon-div">
               <ul class="our-team-icon-list">
                 <li class="our-team-icon-item">
                   <a class="our-team-icon-link" href="#">
@@ -223,8 +206,6 @@
             <div class="our-team-item-div">
               <h3 class="our-team-name">Николай Тарасов</h3>
               <p class="our-team-job">Marketing</p>
-            </div>
-            <div class="our-team-icon-div">
               <ul class="our-team-icon-list">
                 <li class="our-team-icon-item">
                   <a class="our-team-icon-link" href="#">
@@ -262,8 +243,6 @@
             <div class="our-team-item-div">
               <h3 class="our-team-name">Михаил Ермаков</h3>
               <p class="our-team-job">UI Designer</p>
-            </div>
-            <div class="our-team-icon-div">
               <ul class="our-team-icon-list">
                 <li class="our-team-icon-item">
                   <a class="our-team-icon-link" href="#">
@@ -351,9 +330,10 @@
   </main>
   <footer class="footer-section">
     <div class="container footer-container">
+      <div class="footer-webstudio-logo-div">
+      <a href="./index.html" class="footer-webstudio-link"><span class="footer-bluetext">Web</span><span
+        class="footer-whitetext">Studio</span></a>
       <address class="footer-address">
-        <a href="./index.html" class="footer-webstudio-link"><span class="footer-bluetext">Web</span><span
-            class="footer-whitetext">Studio</span></a>
         <ul class="footer-contacts-list">
           <li class="footer-contacts-item">
             <a class="footer-map" target="_blank" rel="noopener noreferrer"
@@ -367,6 +347,7 @@
           </li>
         </ul>
       </address>
+    </div>
       <div class="footer-icon-div">
         <h3 class="footer-icon-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
         <ul class="footer-icon-list">

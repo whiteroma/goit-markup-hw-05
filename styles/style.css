@@ -93,26 +93,26 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
     color: #2196f3;
     background-color: transparent;
     border: none;
     box-shadow: none;
 }
 
-/* a:focus {
+a:focus {
     color: #2196f3;
     background-color: transparent;
     border: none;
     box-shadow: none;
-} */
+}
 
 a:active {
     color: #2196f3;
     background-color: transparent;
     border: none;
     box-shadow: none;
-}
+} */
 
 address {
     font-style: normal;
@@ -136,7 +136,6 @@ address {
 
 .hero {
     margin: 0 auto;
-    align-items: center;
     max-width: 1600px;
     min-height: 600px;
     padding-top: 200px;
@@ -187,7 +186,7 @@ address {
 
 .footer-container {
     display: flex;
-    flex-direction: row;
+    align-items: baseline;
 }
 
 
@@ -206,7 +205,7 @@ address {
 }
 
 .footer-map:hover,
-:focus {
+.footer-map:focus {
     color: #fff;
 }
 
@@ -220,7 +219,7 @@ address {
 }
 
 .footer-contacts-link:hover,
-:focus {
+.footer-contacts-link:focus {
     color: #fff;
 }
 
@@ -246,7 +245,6 @@ address {
 
 .footer-icon-div {
     margin-left: 70px;
-    margin-top: 12px;
 }
 
 .footer-icon-title {
@@ -265,14 +263,16 @@ address {
     margin-right: 10px;
 }
 
-.footer-icon-link:hover, :focus {
+.footer-icon-link:hover, 
+.footer-icon-link:focus {
     background-color: #2196F3;
     color: #fff;
 }
 
 .footer-icon-link {
-    display: block;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     width: 44px;
     height: 44px;
@@ -301,6 +301,11 @@ address {
     flex-direction: row;
     align-items: center;
 }
+
+.footer-webstudio-logo-div {
+
+}
+
 
 .footer-webstudio-link {
     display: inline-block;
@@ -367,6 +372,14 @@ address {
     padding-bottom: 32px;
 }
 
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-nav-link:active {
+    color: #2196f3;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
 
 
 .header-contacts {
@@ -400,6 +413,15 @@ address {
     padding-bottom: 32px;
 }
 
+.header-contacts-link:hover,
+.header-contacts-link:focus,
+.header-contacts-link:active {
+    color: #2196f3;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
 .header-contacts-envelope {
     display: flex;
     align-items: center;
@@ -417,7 +439,7 @@ address {
 }
 
 .icon-envelope:hover,
-:focus {
+.icon-envelope:focus {
     fill: #2196F3;
 }
 
@@ -437,8 +459,8 @@ address {
 }
 
 .icon-phone:hover,
-:focus,
-:active {
+.icon-phone:focus,
+.icon-phone:active {
     fill: #2196F3
 }
 
@@ -515,17 +537,14 @@ address {
     padding-right: 0px;
 }
 
-.about-us-icon-list {
+.about-us-icon-div {
     display: flex;
-    flex-direction: row;
-}
-
-.about-us-icon-item {
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
     margin-bottom: 30px;
-    padding: 25px 100px;
 }
 
 .about-us-icon-item:not(:last-child) {
@@ -596,7 +615,7 @@ address {
 
 .our-team-item-div {
     padding-top: 30px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
 }
 
 .our-team-icon-div {
@@ -605,7 +624,9 @@ address {
 
 .our-team-icon-list {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
 }
 
 .our-team-icon-item {
@@ -621,9 +642,10 @@ address {
 }
 
 .our-team-icon-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
-    padding: 12px;
     border: none;
     width: 44px;
     height: 44px;
@@ -638,7 +660,8 @@ address {
     fill: currentColor;
 }
 
-.our-team-icon-instagram:hover,:focus {
+.our-team-icon-instagram:hover,
+.our-team-icon-instagram:focus {
     fill:#fff;
 }
 
@@ -678,16 +701,18 @@ address {
 }
 
 .clients-icon-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
 }
 
-.clients-icon-link:hover,:focus {
+.clients-icon-link:hover,
+.clients-icon-link:focus {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     border-color: #2196f3;
@@ -718,7 +743,7 @@ address {
 }
 
 .portfolio-buttons:hover,
-:focus {
+.portfolio-buttons:focus {
     background-color: #2196f3;
     color: #fff;
     box-shadow: 0px 2px 2px 0px #0000001F,
@@ -773,8 +798,12 @@ address {
     flex-basis: calc((100% - 90px) / 3);
 }
 
-.portfolio-list-item:hover,
-:focus {
+.portfolio-list-item-link{
+    display: block;
+}
+
+.portfolio-list-item-link:hover,
+.portfolio-list-item-link:focus {
     box-shadow: 1px 4px 6px 0px #00000029,
         0px 4px 4px 0px #0000000F,
         0px 1px 1px 0px #0000001F;
