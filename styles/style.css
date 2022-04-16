@@ -188,10 +188,7 @@ address {
     letter-spacing: 0.03em;
     text-align: left;
     color: #FFFFFF;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-map:hover,
@@ -206,10 +203,7 @@ address {
     letter-spacing: 0.03em;
     text-align: left;
     color: #FFFFFF99;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts-link:hover,
@@ -256,16 +250,14 @@ address {
 
 .footer-icon-item:not(:last-child) {
     margin-right: 10px;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .footer-icon-link:hover,
 .footer-icon-link:focus {
     background-color: #2196F3;
     color: #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-link {
@@ -381,10 +373,7 @@ address {
     text-align: left;
     color: #212121;
     display: block;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover,
@@ -425,10 +414,7 @@ address {
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts-link:hover,
@@ -438,6 +424,7 @@ address {
     background-color: transparent;
     border: none;
     box-shadow: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts-envelope {
@@ -454,10 +441,7 @@ address {
     width: 16px;
     margin: 2px 10px 2px auto;
     fill: currentColor;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-envelope:hover,
@@ -478,10 +462,7 @@ address {
     width: 10px;
     margin-right: 10px;
     fill: currentColor;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-phone:hover,
@@ -870,10 +851,7 @@ address {
 .portfolio-list-item-link {
     display: block;
     position: relative;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item-link-div {}
@@ -959,6 +937,7 @@ address {
 .close-modal-logo {}
 
 .portfolio-list-item-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
