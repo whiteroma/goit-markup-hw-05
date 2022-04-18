@@ -831,7 +831,6 @@ address {
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 90px) / 3);
-    overflow: hidden;
 }
 
 .portfolio-list-item-link {
@@ -889,25 +888,25 @@ address {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-    visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.7);
 }
 
+
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
     width: 528px;
     height: 581px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button {
