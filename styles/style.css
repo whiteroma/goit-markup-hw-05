@@ -926,6 +926,13 @@ address {
         0px 1px 1px 0px #0000001F;
 }
 
+.portfolio-list-item-link:focus .portfolio-list-hover {
+    transform: translateY(0);
+    box-shadow: 1px 4px 6px 0px #00000029,
+        0px 4px 4px 0px #0000000F,
+        0px 1px 1px 0px #0000001F;
+}
+
 .portfolio-list-hover:hover {}
 
 .portfolio-list-hover {
